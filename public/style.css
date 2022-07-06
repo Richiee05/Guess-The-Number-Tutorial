@@ -815,4 +815,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .md\:pr-24 {
-    padding-
+    padding-right: 6rem;
+  }
+
+  .md\:pr-28 {
+    padding-right: 7rem;
+  }
+}
