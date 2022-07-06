@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body class="font-game bg-gray-800 text-slate-50">
+    <header class="p-2">
+      <div class="flex justify-between items-center flex-row-reverse gap-x-9">
+        <p class="">(Between 1 and 20)</p>
+        <button class="btn again bg-white text-black p-4 text-2xl">
+          Again!
+        </button>
+      </div>
+      <div
+        class="text-5xl flex flex-col justify-center items-center gap-y-6 mt-10"
+      >
+        <h1 class="font-bold text-center">Guess My Number!</h1>
+        <div class="w-full bg-white py-1 mx-auto relative mt-16">
+          <span
+            class="number bg-white text-black w-fit px-10 py-5 left-[50%] translate-x-[-50%] translate-y-[50%] bottom-2 absolute"
+            >?</span
+          >
+        </div>
+      </div>
+    </header>
+    <main
+      class="flex flex-col md:flex-row mt-24 items-center justify-center w-full gap-x-4 gap-y-9 md:pr-28 pb-7"
+    >
+      <section
+        class="left order-2 md:-order-none md:-ml-12 flex flex-col gap-y-7 items-center justify-start"
+      >
+        <input
+          type="number"
+          class="guess bg-transparent ring-4 text-6xl ring-white h-32 w-[40%] md:w-[30%] text-center"
+        />
+        <button class="btn-check bg-white text-black text-xl py-4 px-7">
+          Check!
+        </button>
+      </section>
+      <section
+        class="right md:-order-none order-1 flex flex-col whitespace-nowrap"
+      >
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
